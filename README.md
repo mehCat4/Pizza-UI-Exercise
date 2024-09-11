@@ -14,9 +14,11 @@ https://www.figma.com/proto/Kh9vDjwxecFau4izccLOLi/Pizza-UI-Exercise-Prototypes?
 To Run Code:
 -clone repo
 -in IDE terminal, run
+
   npm install
 
 - after package install, in IDE terminal run:
+- 
   ng serve
 
 - navigate to localhost:4200 to see local instance of static web page for Pizza Builder UI
