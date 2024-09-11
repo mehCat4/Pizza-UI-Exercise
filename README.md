@@ -18,7 +18,7 @@ To Run Code:
   npm install
 
 - after package install, in IDE terminal run:
-- 
+
   ng serve
 
 - navigate to localhost:4200 to see local instance of static web page for Pizza Builder UI
