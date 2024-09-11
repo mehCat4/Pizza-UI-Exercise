@@ -13,7 +13,7 @@ https://www.figma.com/proto/Kh9vDjwxecFau4izccLOLi/Pizza-UI-Exercise-Prototypes?
 
 To Run Code:
 -clone repo
--in IDE terminal, run
+-in IDE terminal, run:
 
   npm install
 
