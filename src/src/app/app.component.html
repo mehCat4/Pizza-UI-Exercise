@@ -1,0 +1,35 @@
+<!-- *Going to make the Pizza Chef Creation Page* -->
+<h1>Hello, {{ title }}</h1>
+
+<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+
+<mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="chooseCrustGroup">
+    <form [formGroup]="chooseCrustGroup">
+      <ng-template matStepLabel>Choose Your Crust</ng-template>
+      <mat-form-field>
+        <mat-label>Crust Type</mat-label>
+        <input matInput placeholder="Crust Type" formControlName="crustCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Choose Toppings</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="chooseToppingsGroup">
+    <form [formGroup]="chooseToppingsGroup">
+      <ng-template matStepLabel>Choose Your Toppings (Up to 3)</ng-template>
+      <mat-form-field>
+        <mat-label>Toppings</mat-label>
+        <input matInput formControlName="toppingCtrl" placeholder="Pepperoni" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Crust Types</button>
+        <button mat-button>Review Order</button>
+      </div>
+    </form>
+
+  </mat-step>
+</mat-stepper>
